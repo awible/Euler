@@ -11,24 +11,6 @@ describe Numbers,"sum_even_fib_up_to" do
   end
 end
 
-describe Numbers,"even?" do
-  it "returns_true_for_even_10" do
-    Numbers.even?(10).should eq(TRUE)
-  end
-  it "returns_false_for_even_9" do
-    Numbers.even?(9).should eq(FALSE)
-  end
-end
-
-describe Numbers,"fib_up_to_12" do
-  it "returns_1_2_3_5_8_for_fib_up_to_12" do
-    array_1_2_3_5_8 = [1,2,3,5,8]
-    myarray = []
-    Numbers.fib_up_to(12) {|n| myarray.push(n)}
-    myarray.should eq(array_1_2_3_5_8)
-  end
-end
-
 describe Numbers,"even_fib_up_to_12" do
   it "returns_2_8_for_even_fib_up_to_12" do
     array_2_8 = [2,8]
