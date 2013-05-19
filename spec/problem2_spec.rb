@@ -1,4 +1,4 @@
-require 'problem2'
+require '../problem2'
 describe "even_fib_up_to_12" do
   it "returns_2_8_for_even_fib_up_to_12" do
     array_2_8 = [2,8]
