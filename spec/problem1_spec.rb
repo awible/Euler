@@ -1,4 +1,3 @@
-require 'spec_helper'
 require './problem1'
 describe "sum_multiples_of_n_up_to" do
   it "returns_3_for_multiples_of_3_up_to_5" do
