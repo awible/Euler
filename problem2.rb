@@ -4,6 +4,7 @@
 # 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
+require './number_formating.rb'
 def even_fib_up_to (max)
   first_even_fib_number = 2
   next_fib_number_after_first_even_fib_number = 3
@@ -22,4 +23,8 @@ def sum_even_fib_up_to (max)
   sum = 0
   even_fib_up_to(max) {|factor| sum += factor}
   return sum
+end
+
+def answer
+  format_with_separator(sum_even_fib_up_to(4000000))
 end
